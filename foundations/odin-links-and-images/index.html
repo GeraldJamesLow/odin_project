@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Baller </title>
+    </head>
+
+    <body>
+        <h1>Homepage</h1>
+
+        <!--anchor element-->
+        <p> <a href="https://www.theodinproject.com/about">About The Project</a> </p>
+
+        <p><a>No href</a></p>
+
+        <p> <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">Safer Link</a> </p>
+        <p>Safer Because:</p>
+        <ol>
+            <li> target = "_blank": opens link in new tab</li>
+            <li> rel = "noopener noreferrer"</li>
+            <ul>
+                <li> noopener: New tab cannot use JavaScript to interact with original page</li>
+                <li> noreferrer: noopener + prevents new page from knowing where user comes from (referrer)</li>
+            </ul>
+        </ol>
+
+       <!--Add ./ to specify to look for file/directory relative to current directory--> 
+        <p><a href="pages/about.html">About (using another html file in same directory)</a></p>
+        <p><a href="./pages/about.html">About (using ./ and another html file in same directory)</a></p>
+
+    </body>
+</html>
